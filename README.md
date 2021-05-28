@@ -193,10 +193,7 @@ How to install WSL2 if you have debloated Windows 10 and got rid of the pesky Wi
     Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
     Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -NoRestart
     ```
-
-3. Download and install the WSL2 Kernel Update linked [here](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi) as administrator.
-
-4. Run powershell as admin with the following code:
+3. Run powershell as admin with the following code:
     ```powershell
     cd c:\
 
@@ -215,16 +212,16 @@ How to install WSL2 if you have debloated Windows 10 and got rid of the pesky Wi
     [System.Environment]::SetEnvironmentVariable("PATH", $userenv + ";C:\Ubuntu", "User")
     ```
 
-5. Now, you need to set WSL2 as default. Open up powershell as administrator and run:
+4. Now, you need to set WSL2 as default. Open up powershell as administrator and run:
     ```powershell
-    wsl --set-default-version 2
+    wsl --set-version 2
     ```
 
-6. Verify your Ubuntu 20.04 LTS has `VERSION 2` by using the command:
+5. Verify your Ubuntu 20.04 LTS has `VERSION 2` by using the command:
     ```powershell
     # -l is short for --list and -v is short for --verbose
     wsl -l -v
     ```
     - If Ubuntu 20.04 LTS is `VERSION 1`, you need to update it by running `wsl --set-version Ubuntu-20.04 2`
 
-7. Once completed, follow Section 3 (Creating an Account) onwards :)
+6. Once completed, follow Section 3 (Creating an Account) onwards :)
