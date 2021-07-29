@@ -68,7 +68,7 @@ After you have created your account, it's time to update and install `gcc`. Run 
 
 1. Update and upgrade your Ubuntu:   
     ```
-    sudo apt-get update && sudo apt-get upgrade - y
+    sudo apt-get update && sudo apt-get upgrade -y
     ```
 
 2. You will be prompted for the password linked to the account you just created. Type it in (you won't see any character being input, this is normal).
